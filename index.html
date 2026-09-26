@@ -5,15 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pentas Tunggal KUTUB 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            background: #0f172a;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .label {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #64748b;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        /* BUTTON */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #0f172a;
+        }
+
+        .btn-secondary {
+            border: 1px solid #64748b;
+            color: white;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 0 5%;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Pentas Tunggal KUTUB 2026</h1>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            KUTUB 2026
+        </div>
 
-    <p>Selamat datang di website ticketing resmi Pentas Tunggal KUTUB 2026.</p>
+        <div class="nav-menu">
+            <a href="#">Beranda</a>
+            <a href="#">Informasi</a>
+            <a href="#">Tiket</a>
+        </div>
+    </nav>
 
-    <button>Pesan Tiket</button>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="label">
+                OFFICIAL TICKETING
+            </div>
+
+            <h1>
+                Pentas Tunggal<br>
+                KUTUB 2026
+            </h1>
+
+            <p class="description">
+                Selamat datang di website resmi ticketing
+                Pentas Tunggal KUTUB 2026.
+                Pesan tiketmu secara online dengan mudah.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#" class="btn btn-primary">
+                    Pesan Tiket
+                </a>
+
+                <a href="#" class="btn btn-secondary">
+                    Lihat Informasi
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 </html>
