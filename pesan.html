@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pesan Tiket - KUTUB 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .form-box {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #475569;
+            border-radius: 8px;
+            background: #0f172a;
+            color: white;
+            font-size: 15px;
+        }
+
+        .ticket-info {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: #0f172a;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="index.html" class="back">
+            ← Kembali ke Beranda
+        </a>
+
+        <h1>Pesan Tiket</h1>
+
+        <p class="subtitle">
+            Isi data berikut untuk melakukan pemesanan
+            tiket Pentas Tunggal KUTUB 2026.
+        </p>
+
+        <div class="form-box">
+
+            <div class="ticket-info">
+                <strong>Pentas Tunggal KUTUB 2026</strong><br>
+                Sistem pemesanan online
+            </div>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="nama">
+                        Nama Lengkap
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="contoh@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="nomor">
+                        Nomor WhatsApp
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="nomor"
+                        name="nomor"
+                        placeholder="08xxxxxxxxxx"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="paket">
+                        Pilih Paket Tiket
+                    </label>
+
+                    <select id="paket" name="paket" required>
+
+                        <option value="">
+                            -- Pilih Paket --
+                        </option>
+
+                        <option value="presale">
+                            Presale
+                        </option>
+
+                        <option value="bundling">
+                            Bundling
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah">
+                        Jumlah Tiket
+                    </label>
+
+                    <input
+                        type="number"
+                        id="jumlah"
+                        name="jumlah"
+                        min="1"
+                        max="10"
+                        value="1"
+                        required
+                    >
+                </div>
+
+                <button type="submit">
+                    Lanjutkan Pemesanan
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
